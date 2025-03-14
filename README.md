@@ -1,3 +1,38 @@
+my-gallery-app/
+│── public/                # Static assets (favicon, logos, etc.)
+│── src/
+│   ├── app/               # Next.js App Router (Main routing system)
+│   │   ├── layout.tsx     # Root layout (shared UI)
+│   │   ├── page.tsx       # Home page (Gallery)
+│   │   ├── upload/        # Photo upload page
+│   │   │   ├── page.tsx   # Upload form UI
+│   │   ├── login/         # User authentication page
+│   │   │   ├── page.tsx   # Login page UI
+│   │   ├── api/           # API routes (Server Actions or REST APIs)
+│   │   │   ├── upload.ts  # Image upload API route
+│   ├── components/        # Reusable UI components
+│   │   ├── Navbar.tsx     # Navigation bar
+│   │   ├── PhotoCard.tsx  # Component to display a photo
+│   │   ├── UploadForm.tsx # Image upload form
+│   ├── lib/               # Firebase & Cloudinary config
+│   │   ├── firebase.js    # Firebase setup
+│   │   ├── cloudinary.js  # Cloudinary setup
+│   ├── styles/            # Tailwind & global styles
+│   │   ├── globals.css    # Global styles (includes Tailwind)
+│   ├── utils/             # Helper functions (formatting, validations, etc.)
+│   │   ├── formatDate.ts  # Function to format dates
+│   ├── context/           # React context for global state
+│   │   ├── AuthContext.ts # User authentication context
+│   ├── hooks/             # Custom React hooks
+│   │   ├── useAuth.ts     # Hook for authentication
+│── .env                   # Environment variables (API keys)
+│── .gitignore             # Git ignore file
+│── next.config.ts         # Next.js configuration
+│── package.json           # Project dependencies
+│── tsconfig.json          # TypeScript configuration
+│── README.md              # Project documentation
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
